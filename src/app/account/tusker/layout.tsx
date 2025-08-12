@@ -5,13 +5,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const accountNavItems = [
-  { href: "/account/tuskmaster", label: "My Jobs" },
-  { href: "/account/tuskmaster/offers", label: "Offers" },
-  { href: "/account/tuskmaster/history", label: "Order History" },
-  { href: "/account/tuskmaster/chat", label: "Chat" },
+  { href: "/account/tusker", label: "My Dashboard" },
+  { href: "/account/tusker/offers", label: "My Offers" },
+  { href: "/account/tusker/history", label: "Job History" },
+  { href: "/account/tusker/chat", label: "Chat" },
 ];
 
-export default function CustomerAccountLayout({
+export default function TuskerAccountLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -21,8 +21,8 @@ export default function CustomerAccountLayout({
   return (
     <div className="container mx-auto py-12 px-4 md:px-6">
       <div className="mb-8">
-        <h1 className="text-3xl font-bold font-headline">My Account</h1>
-        <p className="text-[var(--muted-foreground)]">View your job calendar and manage your postings.</p>
+        <h1 className="text-3xl font-bold font-headline">My Dashboard</h1>
+        <p className="text-[var(--muted-foreground)]">Manage your profile, skills, and job offers.</p>
       </div>
 
       <div className="grid md:grid-cols-4 gap-8 items-start">
@@ -39,7 +39,14 @@ export default function CustomerAccountLayout({
             </div>
           </div>
            <div className="mt-6">
-              <Link href="/jobs/new" className="text-sm h-10 px-4 w-full btn secondary-btn">Post a New Job</Link>
+              <div className="card">
+                <div className="p-4">
+                  <p className="text-sm text-muted-foreground mb-4">
+                    Browse the latest job postings to find your next opportunity.
+                  </p>
+                  <Link href="/jobs" className="text-sm h-10 px-4 w-full btn secondary-btn">Find New Work</Link>
+                </div>
+              </div>
           </div>
         </div>
 

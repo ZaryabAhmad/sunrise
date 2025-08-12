@@ -7,6 +7,7 @@
   --white: #ffffff; /* Same as --card --popover  */
   --primary: #f97415; /* Same as--ring  */
   --primary-10: rgba(249, 116, 21, 0.1);
+  --primary-80: rgba(249, 116, 21, 0.8);
   --primary-90: rgba(249, 116, 21, 0.9);
   --primary-foreground: #f7f9fb; /* Same as --accent-foreground --destructive-foreground  */
   --secondary: #f1f5f9; /* Same as --muted  */
@@ -221,13 +222,30 @@ body {
   background: var(--secondary);
   color: var(--secondary-foreground);
   border-radius: 999px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
 }
 
-.badge.bg-orange {
+.badge.open,
+.badge.accepted {
   color: var(--white);
   background: var(--primary);
+}
+
+.badge.open:hover,
+.badge.accepted:hover {
+  background: var(--primary-80);
+}
+
+.badge.close,
+.badge.declined {
+  color: var(--white);
+  background: var(--destructive);
+}
+
+.badge.close:hover,
+.badge.declined:hover {
+  background: var(--destructive-80);
 }
 
 /* Generic Form Style */
@@ -294,6 +312,10 @@ body {
 .table tr {
   vertical-align: middle;
   border-bottom: 1px solid var(--border);
+}
+
+.table tbody tr:last-child {
+  border-bottom: 0;
 }
 
 .table tr:hover {

@@ -59,8 +59,8 @@ export default function CustomerHistoryPage() {
 
     return (
         <div className="card">
-            <div className="cardHeader">
-                <div className="cardTitle">Order History</div>
+            <div className="space-y-1.5 cardHeader">
+                <div className="text-2xl font-headline cardTitle">Order History</div>
                 <p className='text-sm text-[var(--muted-foreground)]'>A record of your completed jobs.</p>
             </div>
             <div className="cardContent">

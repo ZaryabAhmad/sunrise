@@ -51,7 +51,7 @@ export default function CustomerAccountPage() {
                       <td className="font-medium">{job.title}</td>
                       <td>{job.category}</td>
                       <td>${job.budget}</td>
-                      <td><span className="badge bg-orange">Open</span></td>
+                      <td><span className="badge open">Open</span></td>
                       <td className="text-right">
                         <Link href={`/account/tuskmaster/jobs/${job.id}`} className='text-sm h-10 px-4 btn gray-btn'>View Job</Link>
                       </td>
