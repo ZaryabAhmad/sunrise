@@ -2,9 +2,7 @@
 'use client';
 
 import * as React from 'react';
-// import { Button } from "@/components/ui/button";
 import { jobs, mockWorker } from "@/lib/data";
-// import { Badge } from "@/components/ui/badge";
 import { Star, Briefcase, Clock, DollarSign } from "lucide-react";
 import Link from "next/link";
 // import { Calendar } from '@/components/ui/calendar';
@@ -32,7 +30,7 @@ export default function TuskerDashboardPage() {
       <div className="md:col-span-2 space-y-8">
         <div className="card">
           <div className="cardHeader">
-            <div className="cardTitle">Stats at a Glance</div>
+            <div className="text-2xl font-headline cardTitle">Stats at a Glance</div>
           </div>
           <div className="cardContent grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
             <div className="p-4 rounded-lg bg-[var(--secondary)]">

@@ -1,5 +1,3 @@
-
-// import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Send, CheckCircle, FileText, ShieldAlert } from "lucide-react";
 import placeholderProfile from "../../../../../../images/128x128.png";
 import Image from "next/image";
@@ -88,10 +86,6 @@ export default function AcceptOfferPage({
                                 /> */}
                                 <span className="h-full w-full overflow-hidden rounded-full flex items-center justify-center text-base text-white bg-[var(--primary)]">JD</span>
                             </div>
-                            {/* <Avatar>
-                                <AvatarImage src={worker.avatarUrl} data-ai-hint="person avatar" />
-                                <AvatarFallback>{worker.name.charAt(0)}R</AvatarFallback>
-                            </Avatar> */}
                             <div>
                                 <div className="cardTitle text-base">{workerDisplayName}</div>
                                 <p className="text-xs text-[var(--muted-foreground)]">Worker for "{job.title}"</p>

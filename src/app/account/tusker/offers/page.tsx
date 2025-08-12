@@ -1,8 +1,5 @@
 
 import { jobs } from "@/lib/data";
-import { Star } from "lucide-react";
-import Link from "next/link";
-import { JobDetailsCard } from '@/components/job-details-card';
 
 export default function TuskerOffersPage() {
     const myOffers = [

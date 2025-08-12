@@ -47,7 +47,6 @@ export default function CustomerChatPage() {
                     </div>
                 </div>
             </div>
-
             <div className="card md:col-span-2 flex flex-col">
                 <div className="border-b border-[var(--border)] cardHeader">
                     <div className="flex items-center gap-3">
